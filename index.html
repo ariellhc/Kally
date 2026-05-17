@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kally💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ✨ Canvas de Estrelas -->
+  <canvas id="starsCanvas"></canvas>
+
+  <!-- 💖 Container de Corações Pixel -->
+  <div id="heartsContainer" aria-hidden="true"></div>
+
+  <!-- 🎵 Botão de Música -->
+  <button class="music-btn" id="musicBtn" title="Tocar música">
+    <span class="music-icon">♪</span>
+    <span class="music-label">Música</span>
+  </button>
+  <!-- Para adicionar música: coloque um arquivo 'music.mp3' na mesma pasta -->
+  <audio id="bgMusic" loop>
+    <source src="audio/Chrystal - Outta My Mind (Touch) (Official Visualiser).mkv" type="audio/mpeg" />
+  </audio>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Foto ampliada" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--              HERO SECTION               -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="couple-names">
+        <span class="name-left typewriter" id="nameLeft">KaKá</span>
+        <span class="heart-divider">♡</span>
+        <span class="name-right" id="nameRight">Ariel</span>
+      </div>
+      <h1 class="hero-title">Nosso Universo</h1>
+      <p class="hero-subtitle" id="heroSubtitle"></p>
+      <div class="scroll-hint">
+        <span>↓</span>
+        <small>role para descobrir</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           QUOTE 1                       -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="quote-section fade-in">
+    <blockquote class="quote">
+      <p>"Amar não é olhar um para o outro,<br/>é olhar juntos na mesma direção."</p>
+      <cite>— Antoine de Saint-Exupéry</cite>
+    </blockquote>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           GALERIA - LINHA 1             -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="gallery fade-in" id="gallery">
+    <div class="polaroid-grid">
+
+      <div class="polaroid" style="--rot: -3deg" data-caption="Nosso primeiro sorriso juntos">
+        <div class="polaroid-img-wrap">
+          <!-- Substitua o src pelas suas fotos reais -->
+          <img src="img/primeiro encontro.jpeg" alt="Foto 1" onerror="this.src='https://picsum.photos/seed/love1/400/500'" />
+        </div>
+        <p class="polaroid-caption">Nosso Primeiro Encontro ✨</p>
+      </div>
+
+      <div class="polaroid" style="--rot: 2deg" data-caption="A cumplicidade de dois">
+        <div class="polaroid-img-wrap">
+          <img src="img/segundo.jpeg" alt="Foto 2" onerror="this.src='https://picsum.photos/seed/love2/400/500'" />
+        </div>
+        <p class="polaroid-caption">O segundoooo 💫</p>
+      </div>
+
+      <div class="polaroid" style="--rot: -1.5deg" data-caption="Momentos que guardarei para sempre">
+        <div class="polaroid-img-wrap">
+          <img src="img/sorriso3.jpeg" alt="Foto 3" onerror="this.src='https://picsum.photos/seed/love3/400/500'" />
+        </div>
+        <p class="polaroid-caption">Primeira foto que postamos juntos 🌙</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUOTE 2 -->
+  <div class="quote-section fade-in">
+    <blockquote class="quote quote--alt">
+      <p>Se te amar for crime<br/>Que me prenda!!!</p>
+      <cite>Eu Te Amoooo</cite>
+    </blockquote>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           GALERIA - LINHA 2             -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="gallery fade-in">
+    <div class="polaroid-grid polaroid-grid--offset">
+
+      <div class="polaroid" style="--rot: 3deg" data-caption="Onde há amor, há vida">
+        <div class="polaroid-img-wrap">
+          <img src="img/so ela e buque.jpeg" alt="Foto 4" onerror="this.src='https://picsum.photos/seed/love4/400/500'" />
+        </div>
+        <p class="polaroid-caption"></p>
+      </div>
+
+      <div class="polaroid polaroid--featured" style="--rot: 0deg" data-caption="O centro do nosso mundo">
+        <div class="polaroid-img-wrap">
+          <img src="img/olhinhos.jpeg" alt="Foto 5" onerror="this.src='https://picsum.photos/seed/love5/400/600'" />
+        </div>
+        <p class="polaroid-caption">Meu mundo. 🌟</p>
+      </div>
+
+      <div class="polaroid" style="--rot: -2.5deg" data-caption="Teu olhar que me acalma">
+        <div class="polaroid-img-wrap">
+          <img src="img/diadmela.jpeg" alt="Foto 6" onerror="this.src='https://picsum.photos/seed/love6/400/500'" />
+        </div>
+        <p class="polaroid-caption"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUOTE 3 -->
+  <div class="quote-section fade-in">
+    <blockquote class="quote">
+      <p>"Se eu sei o que é o amor,<br/>é por sua causa."</p>
+      <cite>— Hermann Hesse</cite>
+    </blockquote>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--         SEÇÃO DE FRASES ESPECIAIS       -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="special-quotes fade-in">
+    <div class="special-quotes-grid">
+      <div class="special-card">
+        <div class="special-card-icon">✦</div>
+        <p>Sou eternamente grato<br/>por ter você na minha vida.</p>
+      </div>
+      <div class="special-card">
+        <div class="special-card-icon">✦</div>
+        <p>Você é o meu mundo.</p>
+        <small>Eu te amo!</small>
+      </div>
+      <div class="special-card">
+        <div class="special-card-icon">✦</div>
+        <p>Em ti, encontrei<br/>meu lugar favorito,<br/>seus olhos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           GALERIA - LINHA 3             -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="gallery fade-in">
+    <div class="polaroid-grid">
+
+      <div class="polaroid" style="--rot: 2deg" data-caption="Cada instante ao seu lado é um presente">
+        <div class="polaroid-img-wrap">
+          <img src="img/dia da mulher.jpeg" alt="Foto 7" onerror="this.src='https://picsum.photos/seed/love7/400/500'" />
+        </div>
+        <p class="polaroid-caption">Cada instante ao seu lado é um presente</p>
+      </div>
+
+      <div class="polaroid" style="--rot: -2deg" data-caption="O amor que não cabe em palavras">
+        <div class="polaroid-img-wrap">
+          <img src="img/formatura.jpeg" alt="Foto 8" onerror="this.src='https://picsum.photos/seed/love8/400/500'" />
+        </div>
+        <p class="polaroid-caption">Eu te vivo.</p>
+      </div>
+
+      <div class="polaroid" style="--rot: 1.5deg" data-caption="Nossa história continua">
+        <div class="polaroid-img-wrap">
+          <img src="img/buque nos.jpeg" alt="Foto 9" onerror="this.src='https://picsum.photos/seed/love9/400/500'" />
+        </div>
+        <p class="polaroid-caption">Sempre grato por te amar tanto.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUOTE 4 -->
+  <div class="quote-section fade-in">
+    <blockquote class="quote quote--alt">
+      <p>"O amor é a única realidade<br/>que torna a vida digna de ser vivida."</p>
+      <cite>— Rabindranath Tagore</cite>
+    </blockquote>
+  </div>
+<a href="extra.html">
+  <button  class="extra-btn" id="extraBtn" title="clicar para mais surpresas">
+    <span class="extra-icon">💖</span>
+    <span class="extra-label">Extra!!!</span>
+  </button>
+</a>
+  <!-- ═══════════════════════════════════════ -->
+  <!--               FINAL / FOOTER            -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer fade-in">
+    <div class="footer-heart">💖</div>
+    <p class="footer-msg">Feito com todo o amor do mundo,<br/>só para você.</p>
+    <div class="footer-names">
+      <span>Para sempre,</span>
+      <strong id="footerName">Ariel</strong>
+    </div>
+    <p class="footer-date">03/12 á 03/06</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
